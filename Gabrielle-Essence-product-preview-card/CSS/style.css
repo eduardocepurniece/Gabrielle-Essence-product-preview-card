@@ -6,11 +6,9 @@ html {
 }
 body {
     display: flex;
-    flex-flow: column;
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
     margin: 7% 4%;
-
 }
 img {
     border-top-left-radius: 10px;
@@ -25,13 +23,88 @@ p:first-of-type {
     letter-spacing: 0.3rem;
     margin: 0 0 4% 0;
 }
+p {
+    word-spacing: 0.14rem;
+    line-height: 1.5rem;
+}
 h1 {
     font-family: 'Fraunces', serif;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 2.3rem;
     color: hsl(212, 21%, 14%);
     margin: 0;
 }
-a {
+.newPrice{
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6% 0;
     color: hsl(158, 36%, 37%);
+}
+.oldPrice{
+    display: inline-block;
+    margin: 6% 5%;
+    text-decoration: line-through;
+}
+a:first-of-type {
+    display: block;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    background-image: url("../images/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    padding: 5%;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover:first-of-type {
+    background-color: hsl(212, 21%, 14%);
+}
+.attribution{
+    display: none;
+} 
+
+@media /*screen and*/ (max-width: 479px){
+    body {
+        flex-flow: column;
+    }
+    img {
+        content: url("../images/image-product-mobile.jpg");
+    }
+}
+
+
+@media /*screen and*/ (min-width: 480px) {
+    html {
+        height: 100vh;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 45%;
+        vertical-align: middle;
+        margin: 25% auto;
+    }
+    img {
+        content: url("../images/image-product-desktop.jpg");
+        max-width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    main {
+        margin: 11%;
+    }
+    h1 {
+        margin-bottom: 10%;
+    }
+    p {
+        line-height: 1.6rem;
+        margin-bottom: 10%;
+    }
+    .newPrice{
+        margin-bottom: 15%;
+    }
 }
