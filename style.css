@@ -51,7 +51,7 @@ a:first-of-type {
     display: block;
     color: hsl(0, 0%, 100%);
     background-color: hsl(158, 36%, 37%);
-    background-image: url("../images/icon-cart.svg");
+    background-image: url("icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 30% 50%;
     padding: 5%;
@@ -71,7 +71,7 @@ a:hover:first-of-type {
         flex-flow: column;
     }
     img {
-        content: url("../images/image-product-mobile.jpg");
+        content: url("image-product-mobile.jpg");
     }
 }
 
@@ -87,7 +87,7 @@ a:hover:first-of-type {
         margin: 10% auto;
     }
     img {
-        content: url("../images/image-product-desktop.jpg");
+        content: url("image-product-desktop.jpg");
         max-width: 100%;
         border-radius: 0;
         border-top-left-radius: 10px;
