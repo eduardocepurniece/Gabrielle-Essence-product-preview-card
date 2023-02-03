@@ -66,7 +66,7 @@ a:hover:first-of-type {
     display: none;
 } 
 
-@media /*screen and*/ (max-width: 599px){
+@media screen and (max-width: 599px){
     body {
         flex-flow: column;
     }
@@ -76,14 +76,13 @@ a:hover:first-of-type {
 }
 
 
-@media /*screen and*/ (min-width: 600px) and (max-width: 749px){
+@media screen and (min-width: 600px){
     html {
         height: 100vh;
     }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 100%;
         margin: 10% auto;
     }
     img {
@@ -107,96 +106,23 @@ a:hover:first-of-type {
         margin-bottom: 15%;
     }
 }
-@media /*screen and*/ (min-width: 750px) and (max-width: 1000px){
-    html {
-        height: 100vh;
-    }
+@media screen and (min-width: 600px) and (max-width: 749px){
     body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px){
+    body {
         max-width: 80%;
-        margin: 10% auto;
-    }
-    img {
-        content: url("../images/image-product-desktop.jpg");
-        max-width: 100%;
-        border-radius: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    main {
-        margin: 11%;
-    }
-    h1 {
-        margin-bottom: 10%;
-    }
-    p {
-        line-height: 1.6rem;
-        margin-bottom: 10%;
-    }
-    .newPrice{
-        margin-bottom: 15%;
     }
 }
-@media /*screen and*/ (min-width: 1001px) and (max-width: 1300px){
-    html {
-        height: 100vh;
-    }
+@media screen and (min-width: 1001px) and (max-width: 1300px){
     body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         max-width: 60%;
-        margin: 10% auto;
-    }
-    img {
-        content: url("../images/image-product-desktop.jpg");
-        max-width: 100%;
-        border-radius: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    main {
-        margin: 11%;
-    }
-    h1 {
-        margin-bottom: 10%;
-    }
-    p {
-        line-height: 1.6rem;
-        margin-bottom: 10%;
-    }
-    .newPrice{
-        margin-bottom: 15%;
     }
 }
-@media /*screen and*/ (min-width: 1301px){
-    html {
-        height: 100vh;
-    }
+@media screen and (min-width: 1301px){
     body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         max-width: 45%;
-        margin: 10% auto;
-    }
-    img {
-        content: url("../images/image-product-desktop.jpg");
-        max-width: 100%;
-        border-radius: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    main {
-        margin: 11%;
-    }
-    h1 {
-        margin-bottom: 10%;
-    }
-    p {
-        line-height: 1.6rem;
-        margin-bottom: 10%;
-    }
-    .newPrice{
-        margin-bottom: 15%;
     }
 }
